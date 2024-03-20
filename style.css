@@ -9,18 +9,18 @@ body {
     margin: 10px;
 }
 
-.logo img{
+.logo img {
     width: 30px;
     height: 60px;
     margin: 10px 0px 0px 42px;
 }
 
 .texto-encriptar {
-    width: 60%;
-    display: block;
+    display: inline;
+    vertical-align: top;
 }
 
-.texto-encriptar .texto input {
+.texto-encriptar input {
     width: 60%;
     height: 60%;
     margin: 65px 0px 35px 205px;
@@ -31,42 +31,76 @@ body {
     color: #0A3871;
 }
 
-.texto-encriptar .texto input::placeholder {
+.texto-encriptar input::placeholder {
     font-size: 32px;
     color: #0A3871;
 }
 
-.informacion {
-    margin: 250px 0px 15px 172px;
+.texto-encriptado {
+    width: 30%;
+    display: inline;
 }
 
-.informacion p {
-    color: #495057;
+.texto-encriptado {
+    display: inline;
 }
 
 .botones {
-    width: 100%;
-    margin: 10px 0px 35px 175px;
+    display: block;
+}
+
+.informacion {
+    display: block;
+    margin: -150px 0 10px 190px;
+}
+
+.informacion image{
     display: inline-block;
 }
 
-.botones #btn-encriptar {
-    margin-right: 25px;
-    padding: 15px 75px;
+.informacion p {
+    display: inline-block;
+    color: #495057;
+    margin: 0;
+}
+
+.botones {
+    display: block;
+    margin: 0 0 0 190px;
+}
+
+.boton-encriptar{
+    display: inline;
+}
+.boton-desencriptar{
+    display: inline;
+}
+
+.botones .boton-encriptar input {
+    padding: 10px 50px;
     background-color: #0A3871;
     font-size: 26px;
     color: #FFFFFF;
     border-radius: 22px;
+    margin-right: 15px;
 }
 
-.botones #btn-desencriptar {
-    padding: 15px 55px;
+.botones .boton-desencriptar input {
+    padding: 10px 50px;
     background-color: #D8DFE8;
     font-size: 26px;
     color: #0A3871;
     border-radius: 22px;
 }
 
-.texto-encriptado {
-    width: 30%;
+.texto-encriptado{
+    display: inline;
+    margin: -80px 0px 0px 25px;
+}
+
+.texto-encriptado textarea{
+    resize: none;
+    width: 250px;
+    height: 530px;
+    margin-top: -60px;
 }
