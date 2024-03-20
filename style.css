@@ -47,14 +47,15 @@ body {
 
 .botones {
     display: block;
+    margin-left: 13%;
 }
 
 .informacion {
     display: block;
-    margin: -100px 0 10px 190px;
+    margin: 300px 0 0 180px;
 }
 
-.informacion image{
+.informacion image {
     display: inline-block;
 }
 
@@ -66,13 +67,13 @@ body {
 
 .botones {
     display: block;
-    margin: 0 0 0 180px;
 }
 
-.boton-encriptar{
+.boton-encriptar {
     display: inline;
 }
-.boton-desencriptar{
+
+.boton-desencriptar {
     display: inline;
 }
 
@@ -91,17 +92,59 @@ body {
     font-size: 26px;
     color: #0A3871;
     border-radius: 22px;
-    
 }
 
-.texto-encriptado{
+.texto-encriptado {
     display: inline;
     margin: -80px 0px 0px 25px;
 }
 
-.texto-encriptado textarea{
+.texto-encriptado textarea {
     resize: none;
-    width: 250px;
-    height: 530px;
+    position: absolute;
+    width: 17%;
+    height: 510px;
     margin-top: -60px;
+    padding: 22px;
+    font-size: 22px;
+    border-radius: 22px;
+    background-color: #FFFFFF;
+    background-image: url(image/munieco.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+/* .texto-encriptado .boton-copiar{
+    position: absolute;
+    top: 550px;
+    left: 1180px;
+} */
+
+.texto-encriptado .textos {
+    position: absolute;
+    top: 420px;
+    left: 76%;
+}
+
+.texto-encriptado .texto-negrito {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.texto-encriptado .texto-sencillo {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.texto-encriptado .boton-copiar input {
+    position: absolute;
+    top: 530px;
+    left: 1135px;
+    padding: 10px 50px;
+    display: none;
 }
