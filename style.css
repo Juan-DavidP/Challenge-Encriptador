@@ -1,20 +1,27 @@
 body {
     background-color: #F3F5FC;
+    width: 100%;
+    height: 100%;
 }
 
 .logo {
     width: 50%;
     margin: 10px;
-    font-size: 64px;
+}
 
+.logo img{
+    width: 30px;
+    height: 60px;
+    margin: 10px 0px 0px 42px;
 }
 
 .texto-encriptar {
-    width: 50%;
+    width: 60%;
+    display: block;
 }
 
 .texto-encriptar .texto input {
-    width: 50%;
+    width: 60%;
     height: 60%;
     margin: 65px 0px 35px 205px;
     background-color: #F3F5FC;
@@ -40,6 +47,7 @@ body {
 .botones {
     width: 100%;
     margin: 10px 0px 35px 175px;
+    display: inline-block;
 }
 
 .botones #btn-encriptar {
@@ -60,5 +68,5 @@ body {
 }
 
 .texto-encriptado {
-    width: 40%;
+    width: 30%;
 }
