@@ -1,0 +1,64 @@
+body {
+    background-color: #F3F5FC;
+}
+
+.logo {
+    width: 50%;
+    margin: 10px;
+    font-size: 64px;
+
+}
+
+.texto-encriptar {
+    width: 50%;
+}
+
+.texto-encriptar .texto input {
+    width: 50%;
+    height: 60%;
+    margin: 65px 0px 35px 205px;
+    background-color: #F3F5FC;
+    border: none;
+    font-size: 32px;
+    outline: none;
+    color: #0A3871;
+}
+
+.texto-encriptar .texto input::placeholder {
+    font-size: 32px;
+    color: #0A3871;
+}
+
+.informacion {
+    margin: 250px 0px 15px 172px;
+}
+
+.informacion p {
+    color: #495057;
+}
+
+.botones {
+    width: 100%;
+    margin: 10px 0px 35px 175px;
+}
+
+.botones #btn-encriptar {
+    margin-right: 25px;
+    padding: 15px 75px;
+    background-color: #0A3871;
+    font-size: 26px;
+    color: #FFFFFF;
+    border-radius: 22px;
+}
+
+.botones #btn-desencriptar {
+    padding: 15px 55px;
+    background-color: #D8DFE8;
+    font-size: 26px;
+    color: #0A3871;
+    border-radius: 22px;
+}
+
+.texto-encriptado {
+    width: 40%;
+}
