@@ -73,4 +73,11 @@ function desencriptar() {
     document.getElementById('texto-ingresado').value = "";
 }
 
+function copiar() {
+    let textoCopiar = document.getElementById('texto-final');
+    textoCopiar.select();
+    textoCopiar.setSelectionRange(0, 9999999999);
+    navigator.clipboard.writeText(textoCopiar.value);
+    alert("Se ha copiado el texto");
+}
 
