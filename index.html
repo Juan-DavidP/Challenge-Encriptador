@@ -14,16 +14,16 @@
         <h1> <img src="image/alura.svg" alt="Logo Alura"></h1>
     </header>
     <section class="texto-encriptar">
-        <input type="text" placeholder="Ingrese el texto aqui">
+        <input type="text" id="texto-ingresado" placeholder="Ingrese el texto aqui">
     </section>
     <section class="texto-encriptado">
-        <textarea name="" id="" disabled></textarea>
-        <div class="textos">
+        <textarea name="texto-final" id="texto-final" disabled></textarea>
+        <div class="textos" id="textos">
             <p class="texto-negrito">Ningún mensaje fue <br> encontrado</p>
             <p class="texto-sencillo">Ingresa el texto que desees encriptar o desencriptar.</p>
         </div>
-        <div class="boton-copiar">
-            <input type="button" value="Copiar">
+        <div class="div-boton-copiar">
+            <input type="button" value="Copiar" id="boton-copiar">
         </div>
     </section>
     <section class="informacion">
@@ -32,13 +32,14 @@
     </section>
     <section class="botones">
         </div>
-        <div class="boton-encriptar">
-            <input type="submit" value="Encriptar">
+        <div class="div-boton-encriptar">
+            <input type="submit" value="Encriptar" id="boton-encriptar" onclick="encriptar();">
         </div>
-        <div class="boton-desencriptar">
-            <input type="submit" value="Desencriptar">
+        <div class="div-boton-desencriptar">
+            <input type="submit" value="Desencriptar" id="boton-desencriptar" onclick="desencriptar();">
         </div>
     </section>
+    <script src="encriptador.js"></script>
 </body>
 
 </html>

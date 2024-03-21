@@ -69,15 +69,15 @@ body {
     display: block;
 }
 
-.boton-encriptar {
+.div-boton-encriptar {
     display: inline;
 }
 
-.boton-desencriptar {
+.div-boton-desencriptar {
     display: inline;
 }
 
-.botones .boton-encriptar input {
+.botones .div-boton-encriptar input {
     padding: 10px 85px;
     background-color: #0A3871;
     font-size: 26px;
@@ -86,7 +86,7 @@ body {
     margin-right: 15px;
 }
 
-.botones .boton-desencriptar input {
+.botones .div-boton-desencriptar input {
     padding: 10px 50px;
     background-color: #D8DFE8;
     font-size: 26px;
@@ -140,7 +140,7 @@ body {
     padding: 10px 25px;
 }
 
-.texto-encriptado .boton-copiar input {
+.texto-encriptado .div-boton-copiar input {
     position: absolute;
     top: 530px;
     left: 1135px;
