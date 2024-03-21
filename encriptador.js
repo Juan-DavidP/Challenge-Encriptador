@@ -31,37 +31,35 @@ function encriptar() {
             document.querySelector('#texto-final').value = textoCifrado;
         }
     } else {
-        alert("Se ingreso una mayúscula o un acento intentelo de nuevo")
+        alert("Se ingreso una mayúscula o un acento intentelo de nuevo");
 
     }
-
-    console.log(textoCifrado);
     document.querySelector('#texto-ingresado').value = "";
-    document.getElementById('texto-final').style.backgroundImage = "none"
-    document.getElementById('textos').style.display = "none"
-    document.getElementById('boton-copiar').style.display = "block"
+    document.getElementById('texto-final').style.backgroundImage = "none";
+    document.getElementById('textos').style.display = "none";
+    document.getElementById('boton-copiar').style.display = "block";
 }
-function desencriptar() {
-    let textoIngresado = document.getElementById('texto-ingresado').value;
-    let textoDescifrado = "";
-    for (char of textoIngresado) {
-        if (char == "enter") {
-            char = "e"
-        }
-        if (char == "imes") {
-            char = "i"
-        }
-        if (char == "ai") {
-            char = "a"
-        }
-        if (char == "ober") {
-            char = "o"
-        }
-        if (char == "ufat") {
-            char = "u"
-        }
-    }
-}
+// function desencriptar() {
+//     let textoIngresado = document.getElementById('texto-ingresado').value;
+//     let textoDescifrado = "";
+//     for (char of textoIngresado) {
+//         if (char == "enter") {
+//             char = "e"
+//         }
+//         if (char == "imes") {
+//             char = "i"
+//         }
+//         if (char == "ai") {
+//             char = "a"
+//         }
+//         if (char == "ober") {
+//             char = "o"
+//         }
+//         if (char == "ufat") {
+//             char = "u"
+//         }
+//     }
+// }
 
 function desencriptar() {
     let texto = document.getElementById('texto-ingresado').value;
@@ -72,7 +70,7 @@ function desencriptar() {
     textoEncriptado = textoEncriptado.replace(/ober/mg, 'o');
     textoEncriptado = textoEncriptado.replace(/ufat/mg, 'u');
     document.querySelector('#texto-final').value = textoEncriptado;
-    document.querySelector("#texto").value = '';
+    document.getElementById('texto-ingresado').value = "";
 }
 
 
