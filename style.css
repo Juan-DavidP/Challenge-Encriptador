@@ -15,6 +15,10 @@ body {
     margin: 10px 0px 0px 42px;
 }
 
+.arriba{
+    display: inline;
+}
+
 .texto-encriptar {
     display: inline;
     vertical-align: top;
@@ -96,7 +100,7 @@ body {
 
 .texto-encriptado {
     display: inline;
-    margin: -80px 0px 0px 25px;
+    /* margin: -80px 0px 0px 25px; */
 }
 
 .texto-encriptado textarea {
@@ -124,8 +128,8 @@ body {
 
 .texto-encriptado .textos {
     position: absolute;
-    top: 400px;
-    left: 75%;
+    top: 58%;
+    left: 74%;
 }
 
 .texto-encriptado .texto-negrito {
@@ -137,13 +141,13 @@ body {
 .texto-encriptado .texto-sencillo {
     font-size: 16px;
     text-align: center;
-    padding: 10px 25px;
+    padding: 10px 12%;
 }
 
 .texto-encriptado .div-boton-copiar input {
     position: absolute;
     top: 530px;
-    left: 1135px;
+    left: 81%;
     padding: 10px 50px;
     display: none;
 }
