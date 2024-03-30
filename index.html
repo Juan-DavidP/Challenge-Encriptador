@@ -6,41 +6,38 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Encriptador de texto</title>
+    <title>Experimento encriptador</title>
 </head>
 
 <body>
     <header class="logo">
-        <h1> <img src="image/alura.svg" alt="Logo Alura"></h1>
+        <img src="image/alura.svg" alt="Logo Alura">
     </header>
-    <div class="arriba">
+    <main>
         <section class="texto-encriptar">
-            <input type="text" id="texto-ingresado" placeholder="Ingrese el texto aqui">
+            <input type="text" name="input-encriptar" id="input-encriptar" placeholder="Ingrese el texto aqui">
         </section>
         <section class="texto-encriptado">
-            <textarea name="texto-final" id="texto-final" disabled></textarea>
-            <div class="textos" id="textos">
-                <p class="texto-negrito">Ningún mensaje fue encontrado</p>
-                <p class="texto-sencillo">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <textarea name="input-encriptado" id="input-encriptado"></textarea>
+            <div id="mensajes">
+                <p class="texto-negrita">Ningún mensaje fue encontrado</p>
+                <p class="texto-simple">Ingrese el texto que desea encriptar o desencriptar</p>
             </div>
-            <div class="div-boton-copiar">
+            <div id="div-boton-copiar">
                 <input type="button" value="Copiar" id="boton-copiar" onclick="copiar();">
             </div>
         </section>
-    </div>
-    <section class="informacion">
-        <img src="image/informacion.svg" alt="simbolo de advertencia">
-        <p class="informacion">Solo letras minúsculas y sin acentos</p>
-    </section>
-    <section class="botones">
-        </div>
-        <div class="div-boton-encriptar">
-            <input type="submit" value="Encriptar" id="boton-encriptar" onclick="encriptar();">
-        </div>
-        <div class="div-boton-desencriptar">
-            <input type="submit" value="Desencriptar" id="boton-desencriptar" onclick="desencriptar();">
-        </div>
-    </section>
+        <section class="botones">
+            <div class="informacion">
+                <p><img src="image/informacion.svg" alt="Signo de información">
+                    Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones-acciones">
+                <input type="button" value="Encriptar" id="boton-encriptar" onclick="encriptar();">
+                <input type="button" value="Desencriptar" id="boton-desencriptar" onclick="desencriptar();">
+            </div>
+        </section>
+    </main>
     <script src="encriptador.js"></script>
 </body>
 

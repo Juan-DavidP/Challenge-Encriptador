@@ -7,7 +7,7 @@ La letra "u" es convertida para "ufat"
 */
 
 function encriptar() {
-    let textoIngresado = document.getElementById('texto-ingresado').value;
+    let textoIngresado = document.getElementById('input-encriptar').value;
     let textoCifrado = "";
     let textoMinusculas = textoIngresado.toLowerCase();
     if (textoIngresado === textoMinusculas) {
@@ -28,19 +28,19 @@ function encriptar() {
                 char = "ufat"
             }
             textoCifrado = textoCifrado + char;
-            document.querySelector('#texto-final').value = textoCifrado;
+            document.querySelector('#input-encriptado').value = textoCifrado;
         }
     } else {
         alert("Se ingreso una mayúscula o un acento intentelo de nuevo");
 
     }
-    document.querySelector('#texto-ingresado').value = "";
-    document.getElementById('texto-final').style.backgroundImage = "none";
-    document.getElementById('textos').style.display = "none";
-    document.getElementById('boton-copiar').style.display = "block";
+    document.querySelector('#input-encriptar').value = "";
+    document.getElementById('input-encriptado').style.backgroundImage = "none";
+    document.getElementById('mensajes').style.display = "none";
+    document.getElementById('div-boton-copiar').style.display = "block";
 }
 // function desencriptar() {
-//     let textoIngresado = document.getElementById('texto-ingresado').value;
+//     let textoIngresado = document.getElementById('input-encriptar').value;
 //     let textoDescifrado = "";
 //     for (char of textoIngresado) {
 //         if (char == "enter") {
@@ -62,19 +62,19 @@ function encriptar() {
 // }
 
 function desencriptar() {
-    let texto = document.getElementById('texto-ingresado').value;
+    let texto = document.getElementById('input-encriptar').value;
     texto = texto.toLowerCase();
     let textoEncriptado = texto.replace(/enter/mg, 'e');
     textoEncriptado = textoEncriptado.replace(/imes/mg, 'i');
     textoEncriptado = textoEncriptado.replace(/ai/mg, 'a');
     textoEncriptado = textoEncriptado.replace(/ober/mg, 'o');
     textoEncriptado = textoEncriptado.replace(/ufat/mg, 'u');
-    document.querySelector('#texto-final').value = textoEncriptado;
-    document.getElementById('texto-ingresado').value = "";
+    document.querySelector('#input-encriptado').value = textoEncriptado;
+    document.getElementById('input-encriptar').value = "";
 }
 
 function copiar() {
-    let textoCopiar = document.getElementById('texto-final');
+    let textoCopiar = document.getElementById('input-encriptado');
     textoCopiar.select();
     textoCopiar.setSelectionRange(0, 9999999999);
     navigator.clipboard.writeText(textoCopiar.value);

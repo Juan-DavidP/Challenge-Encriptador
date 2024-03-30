@@ -1,172 +1,137 @@
 body {
     background-color: #F3F5FC;
-    width: 100%;
-    height: 100%;
 }
 
 .logo {
-    width: 50%;
-    margin: 5px;
+    margin: 25px 0px 25px 85px;
 }
 
 .logo img {
-    width: 30px;
-    height: 60px;
-    margin: 10px 0px 0px 42px;
-}
-
-.arriba {
-    display: inline;
+    width: 45px;
 }
 
 .texto-encriptar {
     display: inline;
+    margin: 65px 400px 0 220px;
     vertical-align: top;
 }
 
-.texto-encriptar input {
-    width: 60%;
-    height: 60%;
-    margin: 25px 0px 35px 205px;
-    background-color: #F3F5FC;
+.texto-encriptar #input-encriptar {
+    padding: 10px 15px;
     border: none;
-    font-size: 32px;
     outline: none;
-    color: #0A3871;
-}
-
-.texto-encriptar input::placeholder {
     font-size: 32px;
     color: #0A3871;
+    background-color: #F3F5FC;
 }
 
-.texto-encriptado {
-    width: 30%;
-    display: inline;
-}
-
-.texto-encriptado {
-    display: inline;
-}
-
-.botones {
-    display: block;
-    margin-left: 13%;
-}
-
-.informacion {
-    display: block;
-    margin: 300px 0 0 180px;
-}
-
-.informacion image {
-    display: inline-block;
-}
-
-.informacion p {
-    display: inline-block;
-    color: #495057;
-    margin: 0 0 10px 0;
-}
-
-.botones {
-    display: block;
-}
-
-.div-boton-encriptar {
-    display: inline;
-}
-
-.div-boton-desencriptar {
-    display: inline;
-}
-
-.botones .div-boton-encriptar input {
-    padding: 10px 85px;
-    background-color: #0A3871;
-    font-size: 26px;
-    color: #FFFFFF;
-    border: #0A3871 solid 1px;
-    border-radius: 22px;
-    margin-right: 15px;
-}
-
-.botones .div-boton-desencriptar input {
-    padding: 10px 50px;
-    background-color: transparent;
-    font-size: 26px;
+.texto-encriptar #input-encriptar::placeholder {
     color: #0A3871;
-    border: #0A3871 solid 1px;
-    border-radius: 22px;
 }
 
 .texto-encriptado {
     display: inline;
 }
 
-.texto-encriptado textarea {
+.texto-encriptado #input-encriptado {
     resize: none;
     position: absolute;
-    width: 17%;
+    top: 25px;
+    width: 240px;
     height: 510px;
-    left: 1030px;
-    margin-top: -60px;
-    padding: 22px;
-    font-size: 22px;
+    padding: 25px 15px;
+    font-size: 32px;
+    border: none;
     border-radius: 22px;
-    background-color: #FFFFFF;
+    box-shadow: 5px 5px 30px 1px black;
     background-image: url(image/munieco.svg);
     background-repeat: no-repeat;
-    background-size: 200px;
-    background-position-x: 35%;
-    background-position-y: 45%;
+    background-position: 19px 163px;
+    background-size: 216px;
 }
 
-.texto-encriptado .textos {
+#mensajes {
+    display: block;
     position: absolute;
-    top: 380px;
-    left: 1010px;
-    margin: 25px 0;
+    top: 390px;
+    right: 60px;
+    width: 280px;
 }
 
-.texto-encriptado .texto-negrito {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    padding: 0 50px;
-}
-
-.texto-encriptado .texto-sencillo {
-    font-size: 16px;
-    text-align: center;
-    padding: 10px 5%;
-    margin-left: 25px;
-    margin-right: 55px;
-}
-
-.texto-encriptado .div-boton-copiar input {
-    position: absolute;
-    top: 480px;
-    left: 79.5%;
-    padding: 10px 55px;
-    display: none;
-    background-color: transparent;
+#mensajes .texto-negrita {
     font-size: 22px;
-    color: #0A3871;
-    border: #0A3871 solid 1px;
-    border-radius: 24px;
+    font-weight: bold;
+    padding: 0 23px 0 33px;
+    text-align: center;
+}
 
+#mensajes .texto-simple {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 0 0 0 23px;
+    text-align: center;
+}
+
+#div-boton-copiar {
+    display: none;
+    position: absolute;
+    bottom: 45px;
+    right: 78px ;
+}
+
+#boton-copiar {
+    padding: 10px 75px;
+    font-size: 24px;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border: solid 1px #0A3871;
+    border-radius: 22px;
+}
+
+.botones {
+    display: block;
+    position: absolute;
+    bottom: 35px;
+    margin: 25px 235px;
+
+}
+
+.botones .informacion {
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.botones .botones-acciones{
+    margin: 5px 0;
+}
+
+.botones-acciones #boton-encriptar{
+    background-color: #0A3871;
+    color: white;
+    padding: 15px 101px;
+    border: 1px solid #0A3871;
+    border-radius: 22px;
+    margin-right: 25px;
+}
+
+.botones-acciones #boton-desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    padding: 15px 101px;
+    border: 1px solid #0A3871;
+    border-radius: 22px;
 }
 
 /*Vista desde una tablet*/
 
 @media screen and (max-width:1080px) {
     .logo {
-        margin: 65px 25px;
+        margin: 5px 25px;
     }
 
     .texto-encriptar {
         display: block;
+        margin-left: 25px;
     }
 
     .texto-encriptar input {
@@ -198,9 +163,44 @@ body {
         margin: 10px 0 0 100px;
     }
 
+    .texto-encriptado .textos {
+        display: block;
+        position: absolute;
+        top: 125%;
+        left: auto;
+        width: 100%;
+    }
+
+    .texto-encriptado .texto-negrito {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .texto-encriptado .texto-sencillo {
+        font-size: 24px;
+        text-align: center;
+        font-weight: lighter;
+        padding: 10px 12%;
+    }
+
+    .texto-encriptado .div-boton-copiar input {
+        position: absolute;
+        top: 710px;
+        left: 10.5%;
+        padding: 20px 460px;
+        display: none;
+        background-color: transparent;
+        font-size: 22px;
+        color: #0A3871;
+        border: #0A3871 solid 1px;
+        border-radius: 24px;
+    }
+
     .informacion {
         display: block;
-        margin: -107px 136px;
+        margin: -110px 0 0 150px;
     }
 
     .botones {
@@ -228,29 +228,133 @@ body {
         border: #0A3871 solid 1px;
         border-radius: 22px;
     }
-
-    .texto-encriptado .textos {
-        display: block;
-        position: absolute;
-        top: 70%;
-        left: auto;
-        width: 100%;
-    }
-
-    .texto-encriptado .texto-negrito {
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    .texto-encriptado .texto-sencillo {
-        font-size: 24px;
-        text-align: center;
-        font-weight: lighter;
-        padding: 10px 12%;
-    }
 }
 
 /*Vista desde un celular*/
 
+@media screen and (max-width:480px) {
+    body{
+        margin: 25px;
+    }
+
+    .logo {
+        margin: 25px 0px 50px 25px;
+    }
+
+    .logo img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .texto-encriptar {
+        width: 100%;
+        margin-left: 35px;
+    }
+
+    .texto-encriptar input {
+        width: 100%;
+        height: 60%;
+        background-color: #F3F5FC;
+        border: none;
+        font-size: 32px;
+        outline: none;
+        color: #0A3871;
+    }
+
+    .texto-encriptar input::placeholder {
+        width: 100%;
+        height: 48px;
+        font-size: 42px;
+    }
+
+    .texto-encriptado {
+        display: block;
+        position: absolute;
+        margin: 50px 0px 205px 0px;
+        top: 700px;
+        left: -25px;
+    }
+
+    .texto-encriptado textarea {
+        resize: both;
+        position: relative;
+        width: 580px;
+        height: 210px;
+        padding: 22px;
+        font-size: 22px;
+        border-radius: 22px;
+    }
+
+    .texto-encriptado .textos {
+        position: absolute;
+        top: 60px;
+        left: 240px;
+        padding: 0 55px;
+    }
+
+    .texto-encriptado .texto-negrito {
+        display: inline;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        padding: 0px;
+    }
+
+    .texto-encriptado .texto-sencillo {
+        display: none;
+        font-size: 16px;
+        text-align: center;
+        padding: 10px 5%;
+        margin-left: 25px;
+        margin-right: 55px;
+    }
+
+    .texto-encriptado .div-boton-copiar input {
+        position: absolute;
+        top: 480px;
+        left: 79.5%;
+        padding: 10px 55px;
+        display: none;
+        background-color: transparent;
+        font-size: 22px;
+        color: #0A3871;
+        border: #0A3871 solid 1px;
+        border-radius: 24px;
+
+    }
+
+    .informacion {
+        display: inline;
+        margin: 0px 73px;
+        padding: 164px 0;
+    }
+
+    .botones {
+        display: block;
+        position: absolute;
+        top: 512px;
+        width: 100%;
+        margin-left: 70px;
+        align-items: center;
+    }
+
+    .botones .div-boton-encriptar input {
+        padding: 20px 200px;
+        background-color: #0A3871;
+        font-size: 26px;
+        color: #FFFFFF;
+        border: #0A3871 solid 1px;
+        border-radius: 22px;
+        margin-bottom: 20px;
+    }
+
+    .botones .div-boton-desencriptar input {
+        padding: 20px 180px;
+        background-color: transparent;
+        font-size: 26px;
+        color: #0A3871;
+        border: #0A3871 solid 1px;
+        border-radius: 22px;
+    }
+
+}
